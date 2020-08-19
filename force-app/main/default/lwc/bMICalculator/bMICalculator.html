@@ -4,7 +4,7 @@
         <lightning-input type="number" step="0.1" label="Height in Meters" onchange={handleHeight}></lightning-input>
         <lightning-button label="Get BMI" onclick={calculateBMI} ></lightning-button>
         <p>
-            Your BMI is {bmi}.
+            {bmiValue}
         </p>
     </lightning-card>
 </template>
