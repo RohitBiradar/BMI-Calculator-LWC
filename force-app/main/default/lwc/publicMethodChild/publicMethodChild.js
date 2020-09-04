@@ -13,7 +13,8 @@ export default class PublicMethodChild extends LightningElement {
     @api
     selectCheckbox(checkboxValue) {
         const selectedCheckbox = this.options.find( checkbox => {
-            return checkboxValue === checkbox.value;
+            return checkboxValue === checkbox.v
+            checkboxValue;
         });
 
         if(selectedCheckbox) {
