@@ -12,8 +12,11 @@ export default class MeetingRooms extends LightningElement {
 
     ontileSelectHandler(event){
         const meetingRoomInfo = event.detail;
-        console.log('meetingRoomInfo-> ' + meetingRoomInfo );
         this.selectedMeetingInfo = meetingRoomInfo.roomName;
-        console.log('selectedMeetingInfo-> ' + this.selectedMeetingInfo);
+    }
+    
+    constructor(){
+        super();
+        this.template.addEventListener('tileclick', this.ontileSelectHandler.bind(this));
     }
 }
