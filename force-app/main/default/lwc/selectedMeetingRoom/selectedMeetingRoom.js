@@ -3,7 +3,7 @@ import {registerListener, unregisterAllListeners} from 'c/pubsub';
 import { CurrentPageReference } from 'lightning/navigation';
 
 export default class SelectedMeetingRoom extends LightningElement {
-    @track selectedMeetingInfo;
+    @track selectedMeetingInfo = {};
 
     @wire(CurrentPageReference) pageRef;
     connectedCallback(){
