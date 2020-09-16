@@ -1,6 +1,5 @@
 import { LightningElement , track , wire} from 'lwc';
 import { createRecord, getRecord } from "lightning/uiRecordApi";
-import Account from '@salesforce/schema/Case.Account';
 
 
 const fieldArray = ['Account.Name', 'Account.Phone', 'Account.Website'];
@@ -11,7 +10,7 @@ export default class AccountManagerLDS extends LightningElement {
     @track accountWebsite;
     @track recordId;
 
-    @wire(getRecord, {recordId: '$recordId', fieldArray})
+    @wire(getRecord, {recordId: '$recordId',  fields: fieldArray})
     accountRecord;
 
     accountNameChangeHandler(event) {
