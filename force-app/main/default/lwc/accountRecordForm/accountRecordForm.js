@@ -1,7 +1,8 @@
-import { LightningElement, track } from 'lwc';;
+import { LightningElement, api } from 'lwc';;
 export default class AccountRecordForm extends LightningElement {
     
-    @track recordId;
+    @api recordId;
+    @api objectApiName;
     handleSuccess(event){
         this.recordId = event.detail.id;
     }

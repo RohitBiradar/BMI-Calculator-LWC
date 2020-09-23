@@ -1,7 +1,8 @@
 <template>
-    <lightning-card title="Account Record Form">
-        <div class="slds-p-around_medium">
-            <lightning-record-form object-api-name="Account" columns="3" layout-type="Full" mode="edit" record-id={recordId} onsuccess={handleSuccess}></lightning-record-form>
+    <lightning-card title="Custom Record Form">
+        <div class="slds-var-p-around_medium">
+            <lightning-record-form object-api-name={objectApiName} columns="2" layout-type="Full" mode="edit" 
+            record-id={recordId} onsuccess={handleSuccess}></lightning-record-form>
         </div>
     </lightning-card>
 </template>
