@@ -1,5 +1,5 @@
 {
-  "name": "salesforce-app",
+  "name": "lwcsessions",
   "private": true,
   "version": "1.0.0",
   "description": "Salesforce App",
@@ -19,10 +19,22 @@
     "@prettier/plugin-xml": "^0.7.2",
     "@salesforce/eslint-config-lwc": "^0.7.0",
     "@salesforce/eslint-plugin-aura": "^1.4.0",
+    "@salesforce/lwc-jest": "^0.6.2",
     "@salesforce/sfdx-lwc-jest": "^0.7.1",
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
     "prettier": "^2.0.5",
     "prettier-plugin-apex": "^1.5.0"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RohitBiradar/BMI-Calculator-LWC.git"
+  },
+  "author": "Rohit Biradar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RohitBiradar/BMI-Calculator-LWC/issues"
+  },
+  "homepage": "https://github.com/RohitBiradar/BMI-Calculator-LWC#readme"
 }
