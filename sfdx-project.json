@@ -2,10 +2,12 @@
   "packageDirectories": [
     {
       "path": "force-app",
-      "default": true
+      "default": true,
+      "test:unit": "sfdx-lwc-jest",
+      "test:unit:debug": "sfdx-lwc-jest --debug"
     }
   ],
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "49.0"
+  "sourceApiVersion": "47.0"
 }
